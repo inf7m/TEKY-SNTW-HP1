@@ -1,10 +1,16 @@
 def BauTroiDaySao():
+    # improve using while loop - break - continue
+    # print out * as a star
+    # print out " " as a space
     number_of_lines = input("Nhập số dòng: ")
     number_of_lines = int(number_of_lines)
-    for i in range(1, number_of_lines + 1):
-        print("*" * i)
-    for i in range(number_of_lines - 1, 0, -1):
-        print("*" * i)
+    while number_of_lines > 0:
+        print("*" * number_of_lines)
+        number_of_lines -= 1
+    number_of_lines += 2
+    while number_of_lines <= 5:
+        print("*" * number_of_lines)
+        number_of_lines += 1
 
 
 def print_hi(name):
